@@ -15,6 +15,6 @@ app.use('/api/v1/tasks', tasks)
 
 
 //ports
-const port = 6969;
+const port = 3000;
 
 app.listen(port, console.log(`Server is Running on Port ${port}`));
