@@ -2,9 +2,10 @@ const mongoose = require('mongoose')
 
 const connectDB = (url)=>{
     mongoose
-    .connect(url, {url:true,
+    .connect(url, {
+        useNewUrlParser:true,
         useCreateIndex:true,
-        useFindandModify:false,
+        useFindAndModify:false,
         useUnifiedTopology:true,
     })
 }
