@@ -1,7 +1,13 @@
 //Setting Up Routes
 const Task = require('../models/Task')
-const getAllTasks = (req,res) =>{
-    res.send(`Get All Items from the Files`)
+const getAllTasks = async (req,res) => {
+
+    try {
+        const tasks = await Task.find({})
+        res.status(200).json({ tasks})
+    } catch (error) {
+        res.status(500).json({msg:error})
+    }
 }
 
 const createTask = async (req,res) =>{
@@ -16,9 +22,21 @@ const createTask = async (req,res) =>{
     }
     
 }
-const getTask = (req,res) =>{
-     res.send('Get a Single Task')
-    //res.json({id:req.params.id})
+const getTask = async (req,res) =>{
+    try {
+        const { name } = req.params
+        const task = await Task.findOne({ name })
+        
+        if(!task){
+            return res.status(404).json({msg: `No task with name : ${name}`})
+        }
+
+
+        res.status(200).json({ task})
+    } catch (error) {
+        res.status(500).json({msg:error})
+    }
+    
 }
 
 const updateTask = (req,res) =>{
