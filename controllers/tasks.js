@@ -62,6 +62,7 @@ const updateTask = async (req,res) =>{
         const task = await Task.findOneAndUpdate({_id:taskId}, req.body,{
             new:true,
             runValidators: true,
+            overwrite: true,
         })
 
         if(!task){
@@ -76,5 +77,9 @@ const updateTask = async (req,res) =>{
 }
 
 module.exports = {
-    getAllTasks,createTask,getTask,updateTask,deleteTask
+    getAllTasks,
+    createTask,
+    getTask,
+    updateTask,
+    deleteTask,
 }
