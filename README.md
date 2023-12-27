@@ -17,7 +17,7 @@ The Task Manager is a web application that allows users to manage their tasks ef
 
 ## Backend Development
 
-The backend of this project was developed by Nawel Asgar. It utilizes Node.js, Express.js, and MongoDB to handle the server-side logic and data storage.
+The backend of this project was developed by Nawel Asgar. It utilizes Node.js, Express.js, and MongoDB to handle the server-side logic and data storage. The API endpoints were designed and implemented to provide seamless integration between the frontend and backend.
 
 ## Installation
 
