@@ -26,8 +26,9 @@ To run this project locally, follow these steps:
 1. Clone the repository: `git clone https://github.com/nawelasg/Task-Manager.git`
 2. Navigate to the project directory: `cd Task-Manager`
 3. Install the dependencies: `npm install`
-4. Start the server: `npm start`
-5. Open your web browser and visit `http://localhost:3000`
+4. Connect your own MongoDB to the Node server. Make sure to update the MongoDB connection string in the appropriate place in the code.
+5. Start the server: `npm start`
+6. Open your web browser and visit `http://localhost:3000`
 
 ## Features
 
@@ -45,10 +46,6 @@ To run this project locally, follow these steps:
 4. Delete a task by selecting the task and clicking on the "Delete" button.
 5. Mark a task as completed by selecting the task and checking the "Completed" checkbox.
 6. Filter tasks by status using the "Filter" dropdown menu.
-
-## Demo
-
-Check out the live demo of the Task Manager application [here](https://task-manager-bice-seven.vercel.app/).
 
 ## Contribution
 
