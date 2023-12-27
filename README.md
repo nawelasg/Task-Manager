@@ -46,6 +46,10 @@ To run this project locally, follow these steps:
 5. Mark a task as completed by selecting the task and checking the "Completed" checkbox.
 6. Filter tasks by status using the "Filter" dropdown menu.
 
+## Demo
+
+Check out the live demo of the Task Manager application [here](https://task-manager-bice-seven.vercel.app/).
+
 ## Contribution
 
 Contributions to this project are welcome. If you would like to contribute, please follow these steps:
@@ -55,3 +59,4 @@ Contributions to this project are welcome. If you would like to contribute, plea
 3. Make your changes and commit them.
 4. Push your changes to your forked repository.
 5. Submit a pull request.
+
